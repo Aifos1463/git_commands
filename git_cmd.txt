@@ -1,1 +1,28 @@
-Test
+git config --global user.email <email-adresse>
+git config --global user.name "Name Name" / Name (In Anführungszeichen wenn Name ein Leerzeichen hat, sonst kann man auch ohne)
+git config --global core.defaultBranch main
+git config --global -e #öffnen der Konfig im Editor
+git config --global core.editor "nano -W" -> vorkonfigurierte Möglichkeiten im Git-Handbuch
+git config --global core.autocrlf input #in Windows: true
+
+git init
+git add. #alle hinzufügen ansonsten git add <filename>
+git rm --cached <datei> # aus der Überwachung löschen
+git commit -m "Message" / git commit -am "Message"
+git clone <z.B. http-Adresse>
+git status
+git diff 
+git merge
+git merge -abort
+git checkout branchname # auch mit switch
+git show
+git shortlog
+git log
+git help <suchwort>
+
+.gitignore
+.gitkeep
+*.js #alles javascript dateien
+!lib.a #lib.a in der ignore ignorieren
+\*.a
+build/ #inhalt des ordners ignorieren
